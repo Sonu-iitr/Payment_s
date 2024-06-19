@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+// @type {import('tailwindcss').Config} 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: [
     "./index.html",
@@ -6,9 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      grey:{
-        700: "#666666"
-      }
+      fontFamily: {
+        inter: ['"Inter"'],
+      },
     },
   },
   plugins: [],
